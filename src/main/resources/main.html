@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ru">
+
+<head>
+
+<meta http-equals="Comtemt-Type" content="text/html; charset=UTF-8"/>
+<Link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+<script src="https://ajax.googleaps.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+.navbar {
+margin-bottom: 0;
+border-radius: 0;
+}
+.row.content {
+height: 450px
+}
+footer {
+background-color: #555;
+color: white;
+padding 15px;
+}
+@media screen and (max-width: 767px) {
+.row.content {
+height: auto;
+}
+}
+</style>
+<title>��������� ��������</title>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse"><div class+"container-fluid">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" deta-toggle="collapse" data-target="#myNavbar">
+<spam class="icon-bar"></spam>
+<spam class="icon-bar"></spam>
+<spam class="icon-bar"></spam>
+</button>
+</div>
+<div class="colapse navbar-collapse" id="myNavbar">
+<ul class="nav navbar-nav">
+<li class="active"><a href="#">������</a></li>
+<li><a href="#">�������� ����</a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right"></a
+<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> ��������������</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<div class="container-fluid text-center">
+<div class="row content">
+<div class="col-sm-8 text-left">
+<h1>����� ����������!</h1>
+<p>
+���� ���� �������� ������  ���� ������� ����������� <b>framework` a Spring</b><br/>
+</p>
+<hr/>
+<div>
+<h3>�������� ������</h3>
+<!--/*@thymesVar id="message" type=""*/-->
+<p th:text="${message}"/>
+</div>
+</div>
+</div>
+</div>
+</body>
+
+</html>
